@@ -6,7 +6,7 @@
   <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
   <title>posicionar - buenas prácticas - front end</title>
   <link rel="stylesheet" href="stylesheets/presentacion.css" type="text/css" media="screen" charset="utf-8"/>
-
+  
 </head>
 <body>
   <div id="header" class="wrapper">
@@ -16,12 +16,23 @@
   <div id="content">
     <div class="wrapper">
       
+
 <img src="images/0012.png" class="sreenshot" alt="tipos de posición"/>
 
 <div class="article">
   <h1>posicionar</h1>
   
-  <p>Los elementos de nuestra maqueta se posicionarán como <em>static</em> a no ser que les indiquemos otra cosa.</p>
+  <p>Los elementos de una maqueta por defecto tienen position <strong>static</strong>.</p>
+  
+  <p>Si position es <strong>relative</strong>, <strong>absolute</strong> o <strong>fixed</strong> podremos usar las propiedades <em>top, right, bottom, left</em> y <em>z-index</em>. 
+  
+  <p>El uso de position <strong>relative</strong> en capas anidadas puede dar lugar a comportamientos extraños en ie6.</p>
+  
+  <p>Si position es <strong>absolute</strong> el elemento no ocupa el espacio que le corresponde en la maqueta..</p>
+    
+  <p>Si position es <strong>fixed</strong> el elemento no ocupa el espacio que le corresponde en la maqueta y la posición se realiza con respecto al viewport. Al hacer scroll el elemento se quedará fijo. En explorer 6 funciona realmente mal y hay que tirar de <a href="http://www.howtocreate.co.uk/fixedPosition.html">hacks</a>.</p>
+  
+  <p>Vamos a hacer algunos ejemplos para ver el comportamiento de diferentes combinaciones de posiciones.</p>
   
   <p>
     <a href="002-modelo-de-caja-02.html" class="button">« anterior</a>
