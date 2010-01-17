@@ -1,0 +1,7 @@
+# Built-in
+
+# Custom 
+title: absoluto dentro de relativo
+layout: examples
+custom_path: /examples/example002.html
+filters_pre: erb

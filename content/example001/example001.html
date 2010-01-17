@@ -1,6 +1,7 @@
 <% content_for :header do %>
     p {
       padding: 0.5em;
+      margin: 0;
     }
   
     .relative-element {
@@ -12,11 +13,12 @@
   
     .absolute-element {
       position: absolute;
-      top: 1em;
+      top: 0;
       width: 20em;
-      height: 13em;
+      height: 15em;
       background: #FF4376;
       z-index: 1;
+      margin: 0;
     }
 <% end %>
 

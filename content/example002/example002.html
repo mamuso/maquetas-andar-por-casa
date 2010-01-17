@@ -1,0 +1,31 @@
+<% content_for :header do %>
+    p {
+      padding: 0.5em;
+      margin: 0;
+    }
+  
+    .relative-element {
+      position: relative;
+      background: #65D2E6;
+      padding-right: 8em
+    }
+  
+    .absolute-element {
+      position: absolute;
+      top: 0;
+      right: 0;
+      padding: 0.5em;
+      width: 5em;
+      height: 5em;
+      background: #FF4376;
+    }
+<% end %>
+
+<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.</p>
+
+<p class="relative-element">
+  Soy un elemento relativo. Soy tan relativo que funciono como sistema de coordenadas para los elementos absolutos que estén dentro de mi.
+  <span class="absolute-element">Soy un elemento absoluto.</span>
+  </p>
+
+<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
