@@ -24,6 +24,29 @@
   
   <p>Internet Explorer 6 tiene una <a href="http://www.positioniseverything.net/explorer/floatIndent.html">amplia variedad de bugs</a> relacionados con la flotación.</p>
   
+  <p>El más famoso es el <a href="http://www.positioniseverything.net/explorer/doubled-margin.html">double-margin bug</a>, que dice que un objeto flotado en ie6 duplica sus márgenes en infinidad de situaciones. Por ejemplo, esta situación:</p>
+  
+  <pre><code>
+    img {
+      float:left;
+      margin: 5px 10px 5px 5px;
+    }
+  </code></pre>
+  
+  <p>Esta situación tan simple nos daría con toda probabilidad un disgustillo en explorer y tendríamos un margen izquierdo de al menos el doble del valor declarado.</p>
+  
+  <p><img src="images/doublemargin.png" alt="Doublemargin"/></p>
+  
+  <p>La solución es sencilla, pero cuando no la conoces te vuelves literalmente loco.</p>
+
+  <pre><code>
+    img {
+      float:left;
+      margin: 5px 10px 5px 5px;
+      <strong>display: inline;</strong>
+    }
+  </code></pre>
+  
   <p>Por cierto <a href="http://bit.ly/ie6voodoo">bonito broche</a> ¿verdad? :)</p>
   
   <p>
