@@ -1,0 +1,146 @@
+/*
+  Common elements
+*--------------------------------------------------------------------------*/
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: x-small;
+  font-variant: normal;
+  font-style: normal;
+  font-weight: normal;
+  line-height: 1.5em;
+  text-align: center;
+  position: relative;
+  background: #FFFFFF;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  color: #0097B5;
+}
+
+a:focus {
+  outline: none;
+}
+
+.wrapper {
+  margin: 0 auto;
+  width: 95.1em;
+  text-align: left;
+  overflow: hidden;
+}
+
+
+/*
+  Button
+*--------------------------------------------------------------------------*/
+.button { 
+  background: #F2F2F2 url("../images/gradient_button.png") repeat-x scroll 0 0;
+  display: inline-block;
+  width: auto;
+  overflow: visible;
+  padding: .5em 1em;
+  color: #0097B5;
+  text-decoration: none;
+  -moz-border-radius: 4px;
+  -webkit-border-radius: 4px;
+  -moz-box-shadow: 0 .1em .3em rgba(0,0,0,0.10); 
+  -webkit-box-shadow: 0 .1em .3em rgba(0,0,0,0.10); 
+  text-shadow: 0 -1px 1px rgba(0,0,0,0.10);
+  border-bottom: 1px solid rgba(0, 0, 0, 0.10);
+  position: relative;
+  cursor: pointer; 
+}
+
+.button:hover { 
+  background-color: #FFFFFF; 
+  color: #0097B5; 
+}
+
+.button:active { 
+  top: 1px;
+}
+
+
+/*
+  Header
+*--------------------------------------------------------------------------*/
+#header {
+  text-align: right;
+}
+
+#header a {
+  display: block;
+  padding: 1.5em 0 0 0;
+  color : #CCC;
+}
+
+#header a.logo{
+  float: left;
+  padding: 0 0 0 0;
+  width: 5em;
+  height: 5em;
+  background: url('../images/mamuso.gif') no-repeat center center;
+  overflow: hidden;
+  text-indent: -900em;
+  text-align: left;
+}
+
+/*
+  Content
+*--------------------------------------------------------------------------*/
+#content {
+  background: #EDECE9;
+  padding: 2em 0 5em;
+  margin-bottom: 8em;
+}
+
+.sreenshot {
+  float: left;
+  width: 42em;
+  height: 31.5em;
+  border: 5px solid #FFFFFF;
+}
+
+.article {
+  margin-left: 32.2em;
+  font-size: 1.4em;
+  line-height: 1.2em;
+  color: #666666;
+}
+
+.article h1 {
+  padding: 1em 0 0.4em;
+  line-height: normal;
+  color: #0097B5;
+  font-weight: normal;
+  font-size: 1.3em;
+  border-bottom: 1px solid #FFFFFF;
+}
+
+.article p {
+  padding: 1em 0 0 0;
+}
+
+.article ul {
+  padding: 1em 0 1em 1.5em;
+}
+
+.article ul li {
+  padding: 0.3em 0;
+}
+
+.article ul.toc li,
+.article ul.toc {
+  padding: 0.5em 0 0 0;
+  list-style: none;
+}
+
+pre {
+  margin-top: 1em;
+  background: #FFFFFF;
+}
+
