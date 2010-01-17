@@ -16,24 +16,26 @@
   <div id="content">
     <div class="wrapper">
       
-<img src="images/0010.png" class="sreenshot" alt="maquetar es fácil"/>
+<img src="images/0011.png" class="sreenshot" alt="el modelo de caja"/>
 
 <div class="article">
-  <h1>maquetar es fácil</h1>
+  <h1>el modelo de caja</h1>
   
-  <p>:) Sólo se trata de hacer cuadraditos y engañar a la vista. Haz una prueba. Entra en cualquier web y añade con firebug esta regla.</p>
+  <p>Cada elemento rectangular que tengamos que pintar en html responderá al modelo de caja.</p>
+
+  <p>Cuando necesitamos que algo se ajuste a un ancho o alto concreto tenemos que tener en cuenta que:</p>
   
-  <pre><code>
-  * {
-    border: 1px solid red;
-  }
-  </code></pre>
+  <p><strong>ancho total</strong> = borde izq + padding izq + ancho + borde dcho + padding dcho</p>
   
-  <p>El resultado sería un montón de cuadraditos con borde rojo. Visto así no puede ser tan difícil ¿no?</p>
+  <p><strong>alto total</strong> = borde sup + padding sup + ancho + borde inf + padding inf</p>
+  
+  <p>La mayoría del tiempo que pasamos arreglando bugs lo hacemos aplicando hacks para que el modelo de caja se comporte como se supone que se debería de comportar en todos los navegadores.</p>
+  
+  <p>Echadle un vitazo a <a href="http://css-tricks.com/the-css-box-model/">este post</a> para ampliar un poquito la información.</p>
   
   <p>
     <a href="002-modelo-de-caja.html" class="button">« anterior</a>
-    <a href="002-modelo-de-caja-03.html" class="button">siguiente »</a>
+    <a href="003-posicionar.html" class="button">siguiente »</a>
   </p>
 
 </div>
