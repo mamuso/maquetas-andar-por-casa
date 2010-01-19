@@ -1,0 +1,37 @@
+<% content_for :header do %><% end %>
+
+<img src="images/0018.png" class="sreenshot" alt="separata"/>
+
+<div class="article">
+  <h1>separata</h1>
+  
+  <p>
+    En rigor no se cómo llamar a esto, yo lo llamo <em>separata</em>. Éramos jóvenes e inconscientes y teníamos mucho html que malgastar.
+  </p>
+  
+  <p>
+    La teoría: Antes de cerrar el contenedor insertar un elemento de bloque con un <em>clear: both</em> para "romper" por debajo del elemento flotado, y todo solucionado. 
+  </p>
+  
+  <pre><code>
+    .separata {
+      display: block;
+      clear: both;
+      height: 1px;
+      overflow: hidden;
+      visibility: hidden;
+    }
+  </code></pre>
+  
+  <p>En mi caso siempre se lo trataba de aplicar a un hr o directamente hacía un override de los hr. ¿He dicho que era joven?</p>
+  
+  <p>Si antes hemos dicho que era genial trabajar con el html justo y necesario el hecho de añadir elementos sólo para ajustar este tipo de problemas no entra dentro de nuestros planes. Pero yo lo tengo que contar :)</p>
+  
+  <p>El ejemplo lo puedes ver <a href="examples/example003.html">por aquí</a>.</p>
+  
+  <p>
+    <a href="004-flotar-02.html" class="button">« anterior</a>
+    <a href="004-flotar-04.html" class="button">siguiente »</a>
+  </p>
+
+</div>
