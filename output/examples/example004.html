@@ -48,13 +48,20 @@
       margin-left: 10em;
     }
     
-    .separata {
-      display: block;
-      clear: both;
-      height: 1px;
-      overflow: hidden;
-      visibility: hidden;
+    .clearfix:after {
+         content: ".";
+         clear: both;
+         height: 0;
+         visibility: hidden;
+         display: block;
     }
+
+    .clearfix { display: inline; }
+
+    /* Start Commented Backslash Hack \*/
+    * html .clearfix, * html .clearfix * {height: 1%;}
+    .clearfix { display: block; }
+    /* Close Commented Backslash Hack */
 
 
   </style>
@@ -63,12 +70,11 @@
   <div id="column">
     
 
-<div class="editorial">
+<div class="editorial clearfix">
   <img src="../images/smile.jpg" alt="smile!"/>
   <p>
     <strong>¿Lorem Ipsum? No me lo puedo creer</strong>
   </p>
-  <hr class="separata"/>
 </div>
 
 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.</p>

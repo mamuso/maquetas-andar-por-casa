@@ -1,0 +1,63 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+  <title>clearfix - flotaciones - buenas prácticas - front end</title>
+  <link rel="stylesheet" href="stylesheets/presentacion.css" type="text/css" media="screen" charset="utf-8"/>
+  
+</head>
+<body>
+  <div id="header" class="wrapper">
+    <a href="index.html" class="logo"><strong>Front end de andar por casa</strong></a>
+    <a href="toc.html">índice de contenidos</a>
+  </div><!-- #header -->
+  <div id="content">
+    <div class="wrapper">
+      
+
+<img src="images/0019.png" class="sreenshot" alt="clearfix"/>
+
+<div class="article">
+  <h1>clearfix</h1>
+  
+  <p>
+    El <a href="http://perishablepress.com/press/2008/02/05/lessons-learned-concerning-the-clearfix-css-hack/">clearfix</a> es un hack bastante extendido que no siempre se usa del todo bien. La teoría es añadir una serie de reglas css que juegan con el contenedor de los elementos flotados.
+  </p>
+  
+  <p>En su versión revisitada queda más o menos así</p>
+  
+  <pre><code>
+    .clearfix:after {
+         content: ".";
+         clear: both;
+         height: 0;
+         visibility: hidden;
+         display: block;
+    }
+
+    .clearfix { display: inline; }
+
+    /* Start Commented Backslash Hack \*/
+    * html .clearfix, * html .clearfix * {height: 1%;}
+    .clearfix { display: block; }
+    /* Close Commented Backslash Hack */
+  </code></pre>
+  
+  <p>Esta técnica cumple su función estupendamente. El problema es que cuando no tienes muy claro dónde y por qué usarla te encuentras con htmls con clearfixes a 4 y 5 niveles :)</p>
+  
+  <p>Un ejemplito de clearfix <a href="examples/example004.html">por aquí</a>.</p>
+  
+  <p>
+    <a href="004-flotar-03.html" class="button">« anterior</a>
+    <a href="004-flotar-05.html" class="button">siguiente »</a>
+  </p>
+
+</div>
+
+    </div><!-- .wrapper -->
+  </div><!-- #content -->
+  
+</body>
+</html>

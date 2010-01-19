@@ -1,0 +1,7 @@
+# Built-in
+
+# Custom 
+title: separata
+layout: examples
+custom_path: /examples/example004.html
+filters_pre: erb
