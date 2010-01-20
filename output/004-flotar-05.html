@@ -1,0 +1,56 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+  <title>overflow - flotaciones - front end</title>
+  <link rel="stylesheet" href="stylesheets/presentacion.css" type="text/css" media="screen" charset="utf-8"/>
+  
+</head>
+<body>
+  <div id="header" class="wrapper">
+    <a href="index.html" class="logo"><strong>Front end de andar por casa</strong></a>
+    <a href="toc.html">índice de contenidos</a>
+  </div><!-- #header -->
+  <div id="content">
+    <div class="wrapper">
+      
+<a href="http://www.behance.net/Gallery/The-Little-Things-of-Life/215778">
+  <img src="images/0020.png" class="sreenshot" alt="overflow"/>
+</a>
+
+<div class="article">
+  <h1>overflow: hidden/auto</h1>
+  
+  <p>
+   Este comportamiento a mi me parecía extrañísimo al principio. La idea en este caso sería aplicarle un <em>overflow: hidden</em> o <em>auto</em> al contenedor de los elementos flotados. De ese modo se soluciona todo. Aplicando <em>auto</em> aparecerá una scrollbar, así que por lo general usaremos siempre <em>hidden</em>.
+  </p>
+  
+  <p>
+    Adicionalmente para que funcione en explorer (oh, explorer!) necesitaremos aplicar el concepto <a href="http://msdn.microsoft.com/en-us/library/bb250481%28VS.85%29.aspx">has layout</a>. Haciendo un resumen patatero diremos que para explorer un elemento <em>hasLayout</em> si (entre otras posibilidades) tiene <em>width</em> o <em>height</em>. Si el contenedor tiene ya <em>width</em> pues todo arreglado, si no podemos usar <em>height: 1%</em> en la <a href="http://www.quirksmode.org/css/condcom.html">hoja de estilo para explorer</a>.
+  </p>
+  
+  <pre><code>
+    .editorial {
+      ...
+      height: 1%;
+      overflow: hidden;
+      ...
+    }
+  </code></pre>
+    
+  <p>Explicado de otra manera <a href="http://www.quirksmode.org/css/clearing.html">por aquí</a>, y el ejemplo correspondiente <a href="examples/example005.html">por aquí</a>.</p>
+  
+  <p>
+    <a href="004-flotar-04.html" class="button">« anterior</a>
+    <a href="005-layout.html" class="button">siguiente »</a>
+  </p>
+
+</div>
+
+    </div><!-- .wrapper -->
+  </div><!-- #content -->
+  
+</body>
+</html>
