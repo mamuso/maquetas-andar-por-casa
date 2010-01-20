@@ -100,13 +100,14 @@ a:focus {
 
 .sreenshot {
   float: left;
+  display: inline;
   width: 42em;
   height: 31.5em;
   border: 5px solid #FFFFFF;
 }
 
 .article {
-  margin-left: 32.2em;
+  margin: 0 0 0 32.2em;
   font-size: 1.4em;
   line-height: 1.2em;
   color: #666666;

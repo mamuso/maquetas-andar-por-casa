@@ -1,0 +1,12 @@
+/*
+  Button
+*--------------------------------------------------------------------------*/
+.button { 
+  background-color: #FFFFFF; 
+  background-image: none;
+}
+
+.button:hover { 
+  background-color: #FFFFFF; 
+  color: #0097B5; 
+}
