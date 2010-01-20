@@ -75,7 +75,7 @@ a:focus {
 #header a {
   display: block;
   padding: 1.5em 0 0 0;
-  color : #CCC;
+  color : #999;
 }
 
 #header a.logo{
