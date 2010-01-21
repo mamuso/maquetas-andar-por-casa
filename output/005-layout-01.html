@@ -22,34 +22,47 @@
     <div class="wrapper">
       
 
-  <img src="images/0022.jpg" class="sreenshot" alt="el típico layout centrad"/>
+  <img src="images/0022.jpg" class="sreenshot" alt="el típico layout centrado"/>
 
 <div class="article">
-  <h1>el típico layout centrad</h1>
+  <h1>el típico layout centrado</h1>
   
   <p>
-    Con los conceptos básicos más o menos claro nos toca enfrentarnos a nuestro primer diseño. El problema casi siempre es cómo empezar. En mi caso prefiero ir siempre de lo general a lo particular, intentando definir todos los grandes contenedores de fuera a adentro, incluso aunque los deje vacío en un principio.
+    Muchísimas veces nos encontraremos con este tipo de layout, todo totalmente centradito, con una cabecera, un par de columnas y un pie.
   </p>
   
   <p>
-    <img src="images/layouts.png" alt="Layouts"/>
+    En este caso vamos a tener un contenedor que nos va a funcionar como 'director' y a usar el mínimo html posible, un poquito más adelante añadiremos más html para hacer cosas más bonitas, pero por algún sitio hay que empezar. Así que la estructura sería algo como:
+  </p>
+  
+  <pre><code>
+&lt;div id=&quot;wrapper&quot;&gt;
+
+  &lt;div id=&quot;header&quot;&gt;
+    Su cabecera aqu&iacute;
+  &lt;/div&gt;&lt;!-- #header --&gt;
+  
+  &lt;div id=&quot;article&quot;&gt;
+    Su lorem ipsum aqu&iacute;
+  &lt;/div&gt;&lt;!-- #article--&gt;
+  
+  &lt;div id=&quot;aside&quot;&gt;
+    Su sidebar
+  &lt;/div&gt;&lt;!-- #aside--&gt;
+  
+  &lt;div id=&quot;footer&quot;&gt;
+    Su pie aqu&iacute;
+  &lt;/div&gt;&lt;!-- #footer --&gt;
+  
+&lt;/div&gt;&lt;!-- #wrapper --&gt;
+  </code></pre>
+  <p>
+    El código es mínimo, así que te recomiendo que abras <a href="examples/example006.html">el ejemplo</a> y le des un repasito con firebug.
   </p>
   
   <p>
-    A partir de ahí identifico el contenido por grupos para ir escribiendo código para posteriormente darle estilo.
-  </p>
-  
-  <p>
-    Además tengo la suerte de que casi todos los diseños que caen en mi mesa están perfectamente reticulados. Si tienes esa suerte tal vez <a href="http://reticulatorjs.mamuso.net/">esta cosita que hice</a> pueda venirte bien.
-  </p>
-  
-  <p>
-    Seguro que durante nuestra larga y fructífera vida como picadores de código nos vamos a encontrar infinidad de diseños, así que aquí no podemos poner ejemplos de todos. Vamos a poner un par de ejemplos, uno más básico, otro que tiene truco :)
-  </p>
-  
-  <p>
-    <a href="004-flotar-05.html" class="button">« anterior</a>
-    <a href="005-layout-01.html" class="button">siguiente »</a>
+    <a href="005-layout.html" class="button">« anterior</a>
+    <a href="005-layout-02.html" class="button">siguiente »</a>
   </p>
 
 </div>
