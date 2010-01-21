@@ -1,0 +1,40 @@
+body,
+#header,
+#content,
+.wrapper {
+  width: 100% ;
+  text-align: center;
+}
+
+#header a {
+  display: block;
+  padding: 1.5em 1em 0 0;
+  color : #999;
+}
+
+.sreenshot {
+  float: none;
+  display: inline;
+  width: 90%;
+  height: auto;
+  border: 5px solid #FFFFFF;
+}
+
+.article {
+  text-align: left;
+  padding: 0 1em;
+  margin: 0 0 0 0em;
+  font-size: 1.4em;
+  line-height: 1.2em;
+  color: #666666;
+}
+
+.article img {
+  width: 100%;
+}
+
+code, 
+pre {
+  width: 100%;
+  overflow: hidden;
+}
