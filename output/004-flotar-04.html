@@ -34,20 +34,20 @@
   <p>En su versión revisitada queda más o menos así</p>
   
   <pre><code>
-    .clearfix:after {
-         content: ".";
-         clear: both;
-         height: 0;
-         visibility: hidden;
-         display: block;
-    }
+.clearfix:after {
+     content: ".";
+     clear: both;
+     height: 0;
+     visibility: hidden;
+     display: block;
+}
 
-    .clearfix { display: inline; }
+.clearfix { display: inline; }
 
-    /* Start Commented Backslash Hack \*/
-    * html .clearfix, * html .clearfix * {height: 1%;}
-    .clearfix { display: block; }
-    /* Close Commented Backslash Hack */
+/* Start Commented Backslash Hack \*/
+* html .clearfix, * html .clearfix * {height: 1%;}
+.clearfix { display: block; }
+/* Close Commented Backslash Hack */
   </code></pre>
   
   <p>Esta técnica cumple su función simplemente añadiendo una clase. El problema es que cuando no tienes muy claro dónde y por qué usarla te encuentras con htmls con clearfixes a 4 y 5 niveles :) </p>

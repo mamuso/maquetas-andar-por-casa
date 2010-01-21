@@ -74,8 +74,9 @@ a:focus {
 
 #header a {
   display: block;
-  padding: 1.5em 0 0 0;
+  padding: 1.3em 0 0 0;
   color : #999;
+  font-size: 1.2em;
 }
 
 #header a.logo{
@@ -83,6 +84,7 @@ a:focus {
   padding: 0 0 0 0;
   width: 5em;
   height: 5em;
+  font-size: x-small;
   background: url('../images/mamuso.gif') no-repeat center center;
   overflow: hidden;
   text-indent: -900em;
@@ -142,7 +144,9 @@ a:focus {
 
 pre {
   margin-top: 1em;
+  padding: 0 1em;
   background: #FFFFFF;
+  white-space: pre-wrap;
 }
 
 .sidecontent {

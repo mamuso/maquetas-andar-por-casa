@@ -1,0 +1,36 @@
+<% content_for :header do %><% end %>
+
+  <img src="images/smartphonismo.png" class="sreenshot" alt="smartphonismo"/>
+
+<div class="article">
+  <h1>smartphonismo</h1>
+  
+  <p>
+    Esto no lo dimos en el curso, pero me apetecía ponerlo :) Cada vez son más los que tienen internet en un dispositivo móvil y que lo usan prácticamente para todo. Hacer la experiencia de navegación / lectura agradable en este tipo de dispositivos podría dar para rato, pero hay un par de cosillas que podemos hacer que funcionan muy bien y no cuestan demasiado.
+  </p>
+  
+  <p>
+    Cuando hablamos de smartphones los dos grupos que más posibilidades nos dan son iPhones y Androids (entre otros, que no se me ofenda nadie). En este tipo de dispositivos el <em>media="handheld"</em> no sirve de nada, así que la alternativa es usar esto:
+  </p>
+  
+  <pre><code>
+&lt;link rel=&quot;stylesheet&quot; href=&quot;...&quot; type=&quot;text/css&quot; media=&quot;only screen and (max-device-width: 480px)&quot;/&gt;
+  </code></pre>
+  
+  <p>
+    No se por qué esto no me funciona en los emuladores que me he encontrado por ahí. En esta hoja de estilo redefiniremos todo lo que necesitemos para la versión móvil. Lo más importante es ocultar lo que nos sobre y darle un width del 100% a lo que deba de ocupar toda la página.
+  </p>
+  
+  <p>
+    Además hay un truquito para que el iphone no haga de las suyas con el zoom de texto. Sólo tenemos que añadir esto.
+  </p>
+  
+  <pre><code>
+&lt;meta name=&quot;viewport&quot; content=&quot;width=device-width; initial-scale=1.0; maximum-scale=1.0; user-scalable=0;&quot; /&gt;
+  </code></pre>
+  <p>
+    <a href="004-flotar-05.html" class="button">« anterior</a>
+    <a href="gracias.html" class="button">siguiente »</a>
+  </p>
+
+</div>
