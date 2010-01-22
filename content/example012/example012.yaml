@@ -2,4 +2,6 @@
 
 # Custom 
 title: bordes redondeados
+layout: examples
+custom_path: /examples/example012.html
 filters_pre: erb
