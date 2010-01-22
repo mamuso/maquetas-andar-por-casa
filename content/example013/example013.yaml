@@ -1,0 +1,7 @@
+# Built-in
+
+# Custom 
+title: todo junto!
+layout: layouts
+custom_path: /examples/example013.html
+filters_pre: erb

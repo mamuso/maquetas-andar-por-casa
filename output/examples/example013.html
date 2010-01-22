@@ -1,0 +1,353 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+  <title>todo junto! - front end</title>
+  <style type="text/css">
+    
+    body {
+      font-family: Arial, Helvetica, sans-serif;
+      font-size: x-small;
+      font-variant: normal;
+      font-style: normal;
+      font-weight: normal;
+      line-height: 1.5em;
+      text-align: center;
+      background: #22353C;
+    }
+    
+    * {
+      margin: 0;
+      padding: 0;
+    }
+    
+    .wrapper {
+      width: 95.1em;
+      margin: 0 auto;
+      text-align: left;
+    }
+    
+    #accesibility_menu {
+      display: none;
+    }
+
+
+    /*
+    * Header
+    * ************************************/
+    
+    #header {
+      background: #E2E3DA;
+    }
+    
+    #header .wrapper {
+      position: relative;
+    }
+    
+    #header .logo {
+      float: left;
+      position: relative;
+      width: 14.4em;
+      height: 8.5em;
+      margin-bottom: -1em;
+      text-indent: -900em;
+      overflow: hidden;
+      background: url('../images/todojunto/logo_header.gif') no-repeat top center;
+      z-index: 1;
+    }
+    
+    #nav {
+      height: 1%;
+      overflow: hidden;
+      padding: 4.2em 0 0 1em;
+    }
+
+    #nav li {
+      float: left;
+      display: inline;
+      list-style: none;
+      margin: 0 0.2em;
+      background: #CBC8B5 url('../images/todojunto/nav_a.gif') no-repeat top left;
+    }
+    
+    #nav li a {
+      display: block;
+      padding: 0.8em 1.8em;
+      text-decoration: none;
+      font-size: 1.4em;
+      color: #555555;
+      font-weight: bold;
+      font-family: georgia, serif;
+      background: url('../images/todojunto/nav_b.gif') no-repeat top right;
+    }
+
+    #nav li.active {
+      background: #F5F5E9 url('../images/todojunto/nav_a_active.gif') no-repeat top left;
+    }
+    
+    #nav li.active a {
+      color: #333333;
+      background: url('../images/todojunto/nav_b_active.gif') no-repeat top right;
+    }
+    
+    #search {
+      position: absolute;
+      right: 0;
+      top: 3em;
+    }
+    
+    #search fieldset {
+      width: 25em;
+      border: 3px solid #CBC8B5;
+      background: #FFFFFF;
+    }
+    
+    #search label {
+      display: none;
+    }
+    
+    #search input {
+      float: left;
+      display: inline;
+      width: 16em;
+      border: 1px solid #FFF;
+      padding: 0.5em 0 0 0.5em;
+      font-size: 1.3em;
+      color: #555;
+      margin: 0;
+      font-family: Arial, Helvetica, sans-serif;
+    }
+    
+    #search button {
+      float: right;
+      border: 1px solid #FFF;
+      background: #FFF url('../images/todojunto/search_button.gif') no-repeat center center;
+      width: 2.8em;
+      height: 2.8em;
+      overflow: visible;
+      padding: 0;
+      margin: 0;
+      font-size: x-small;
+      text-indent: -9000em;
+    }
+
+
+    /*
+    * Content
+    * ************************************/
+    
+    #content {
+      background: #F5F5E9;
+      padding: 2em 0;
+    }
+    
+    #content .wrapper {
+      height: 1%;
+      overflow: hidden;
+    }
+    
+    #main_content {
+      float: left;
+      width: 63.5em;
+    }
+    
+    #main_content h1 {
+      line-height: normal;
+      font-size: 2.3em;
+      padding: 0 0 0.5em;
+      font-family: georgia, serif;
+      color: #555555;
+    }
+    
+    .article {
+      font-size: 1.3em;
+      line-height: 1.3em;
+    }
+    
+    .article p {
+      padding: 0.8em 0;
+    }
+    
+    .article .screenshot {
+      float: right;
+      display: inline;
+      border: 5px solid #FFF;
+      margin: 0.5em 0 1em 1em;
+    }
+    
+    #aside {
+      float: right;
+      width: 26em;
+      padding: 1.5em;
+      background: #23C0E3;
+      overflow: hidden;
+    }
+    
+    #aside strong.title {
+      display: block;
+      font-size: 1.9em;
+      padding: 0 0 1em;
+      font-family: georgia, serif;
+      color: #FFFFFF;
+    }
+    
+    #aside .about {
+      font-size: 1.2em;
+      height: 1%;
+      overflow: hidden;
+      padding: 0 0 2em 0;
+    }
+    
+    #aside .about img {
+      float: left;
+    }
+    
+    #aside .about p {
+      margin: 0 0 0 11.5em;
+    }
+    
+    #nicepics {
+      width: 105%;
+      overflow: hidden;
+    }
+    
+    #nicepics li {
+      float: left;
+      display: inline;
+      padding: 0 1.3em 0.8em 0;
+    }
+    
+    #nicepics li a img {
+      border: none;
+    }
+    
+    
+    /*
+    * Related
+    * ************************************/
+    
+    #related {
+      clear: both;
+      border-top: 5px solid #E9EAE0;
+      background: #CBC8B5;
+    }
+    
+    
+    /*
+    * Footer
+    * ************************************/
+    
+    #footer {
+      border-top: 5px solid #37545C;
+    }
+    
+
+  </style>
+</head>
+<body>
+  
+
+  
+  <div id="accesibility_menu">
+    <a href="#main_content" title="Ir al contenido. Tecla de Acceso = 'S'" accesskey="S">Ir al contenido</a>
+  </div><!-- #accesibility_menu -->
+
+  
+  
+  <div id="header">
+    <div class="wrapper">
+      <a href="#" class="logo">Hola mundo</a>
+      
+      <ul id="nav">
+        <li class="active"><a href="#">hell yeah</a></li>
+        <li><a href="#">hell yeah</a></li>
+        <li><a href="#">hell requeteyeah</a></li>
+      </ul><!-- #nav -->
+      
+      <form action="#" method="post" id="search">
+        <fieldset>
+          <label for="q">Buscar</label>
+          <input type="text" id="q" name="q" value=""/>
+          <button>
+            Buscar
+          </button>
+        </fieldset>
+      </form>
+      
+    </div><!-- .wrapper -->
+  </div><!-- #header -->
+  
+  <div id="content">
+    <div class="wrapper">
+    
+      <div id="main_content">
+        
+        <h1>Hooray! Sonrie, sales por la tele!</h1>
+        
+        <div class="article">
+        
+          <img src="../images/todojunto/bigpic.gif" class="screenshot" alt="wadus and wadus!"/>
+          
+          <p>
+            The nation’s top copyright official made a blistering attack Thursday on a 
+            controversial legal settlement that would let Google create a huge online 
+            library and bookstore.
+          </p>
+          <p>
+            Testifying before the House Judiciary Committee, Marybeth Peters, the
+            United States register of copyrights, said the settlement between Google 
+            and groups representing authors and publishers amounted to an end-run 
+            around copyright law that would wrest control of books from authors and 
+            other right holders.
+          </p>
+          <p>
+            Ms. Peters, the first government official to address the settlement in detail, 
+            said it would allow Google to profit from the work of others without prior 
+            consent and that it could put “diplomatic stress” on the United States 
+            because it affected foreign authors whose rights are protected by 
+            international treaties.
+          </p>
+        </div><!-- .article -->
+        
+      </div><!-- #main_content -->
+      
+      <div id="aside">
+        <strong class="title">Quién soy?</strong>
+        <div class="about">
+          <img src="../images/todojunto/whale.gif" alt="baaallenita"/>
+          <p>The nation’s top copyright official made a blistering attack.</p>
+        </div><!-- .about -->
+        
+        <strong class="title">Mis fotos bonicas</strong>
+        <ul id="nicepics">
+          <li><a href="#"><img src="../images/todojunto/nicepics.gif" alt="nicepic"/></a></li>
+          <li><a href="#"><img src="../images/todojunto/nicepicsb.gif" alt="nicepic"/></a></li>
+          <li><a href="#"><img src="../images/todojunto/nicepics.gif" alt="nicepic"/></a></li>
+          <li><a href="#"><img src="../images/todojunto/nicepicsb.gif" alt="nicepic"/></a></li>
+          <li><a href="#"><img src="../images/todojunto/nicepics.gif" alt="nicepic"/></a></li>
+          <li><a href="#"><img src="../images/todojunto/nicepicsb.gif" alt="nicepic"/></a></li>
+        </ul>
+        
+      </div><!-- #aside -->
+      
+    </div><!-- .wrapper -->
+  </div><!-- #content -->
+  
+  <div id="related">
+    <div class="wrapper">
+      d
+    </div><!-- .wrapper -->
+  </div><!-- #related -->
+  
+  <div id="footer">
+    <div class="wrapper">
+      <p>
+        Su pie aquí
+      </p>
+    </div><!-- .wrapper-->
+  </div><!-- #footer -->
+
+</body>
+</html>
