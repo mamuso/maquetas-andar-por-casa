@@ -10,6 +10,11 @@
       background: #22353C;
     }
     
+    body { 
+      behavior: url("../images/csshover3.htc"); 
+    }
+    
+    
     * {
       margin: 0;
       padding: 0;
@@ -136,7 +141,6 @@
     }
     
     #content .wrapper {
-      height: 1%;
       overflow: hidden;
     }
     
@@ -201,14 +205,14 @@
     }
     
     #nicepics {
-      width: 105%;
+      width: 110%;
       overflow: hidden;
     }
     
     #nicepics li {
       float: left;
       display: inline;
-      padding: 0 1.3em 0.8em 0;
+      padding: 0 1.6em 0.8em 0;
     }
     
     #nicepics li a img {
@@ -224,9 +228,108 @@
       clear: both;
       border-top: 5px solid #E9EAE0;
       background: #CBC8B5;
-      padding: 3em 0;
+      padding: 2em 0;
     }
     
+    #related hr {
+      display: block;
+      clear: both;
+      height: 1px;
+      overflow: hidden;
+      visibility: hidden;
+    }
+    
+    #related .col {
+      float: left;
+      display: inline;
+      width: 32%;
+      margin-left: 1%;
+    }
+    
+    .col .title {
+      display: block;
+      font-size: 1.9em;
+      padding: 0 0 0.5em;
+      margin: 0 0 0.5em;
+      font-family: georgia, serif;
+      color: #63604F;
+      border-bottom: 1px solid #A29D80;
+    }
+    
+    #related .about img {
+      float: right;
+      margin: 0 0 0 1em;
+    }
+    
+    #related .about p {
+      font-size: 1.2em;
+      padding-bottom: 0.5em;
+    }
+    
+    #related .related ul li {
+      border-bottom: 1px dotted #A29D80;
+      list-style: none;
+    }
+    
+    #related .related ul li a {
+      display: block;
+      padding: 0.4em 0.3em;
+      color: #333;
+      font-size: 1.2em;
+      text-decoration: none;
+    }
+
+    #related .related ul li a span {
+      color: #7C7A70;
+      font-size: 1.6em;
+      line-height: normal;
+      vertical-align: middle;
+    }
+    
+    #related .people li {
+      float: left;
+      height: 5.8em;
+      width: 6em;
+      list-style: none;
+      z-index: 0;
+      font-size: x-small;
+      list-style: none
+    }
+    
+    #related .people li img {
+      position: relative;
+      z-index: 0;
+      border: 2px solid #FFFFFF;
+    }
+    
+    #related .people li span {
+      position: absolute;
+      display: none;
+      background: #FFF;
+      top: -0.3em;
+      left: -0.3em;
+      width: 9em;
+      height: 5em;
+      padding: 0.8em 0.5em 0.5em 6em;
+      z-index: 1;
+      color: #555;
+      font-size: 1.1em;
+      text-decoration: none;
+    }
+    
+    #related .people li:hover {
+      position: relative;
+      z-index: 1;
+    }
+    
+    #related .people li:hover img {
+      position: relative;
+      z-index: 2;
+    }
+
+    #related .people li:hover span {
+      display: block;
+    }
     
     /*
     * Footer
@@ -234,7 +337,21 @@
     
     #footer {
       border-top: 5px solid #37545C;
+      padding: 2em 0 5em;
     }
+    
+    #footer .wrapper {
+      overflow: hidden;
+    }
+    
+    #footer a.logo {
+      float: right;
+      width: 7.5em;
+      height: 3.5em;
+      text-indent: -9000em;
+      background: url('../images/todojunto/logo_footer.gif') no-repeat center center;
+    }
+    
     
 <% end %>
 <% content_for :js do %><% end %>
@@ -326,14 +443,155 @@
   
   <div id="related">
     <div class="wrapper">
-      d
+      
+      <div class="col people">
+        <strong class="title">personal al que le mola</strong>
+        <ul>
+          <li class="active">
+            <a href="#">
+              <img src="../images/todojunto/avatar.png" alt="avatar"/>
+              <span>
+                <strong>john john</strong>
+                <p>
+                  pistolero y asceta a tiempo parcial
+                </p>
+              </span>
+            </a>
+          </li>
+
+          <li>
+            <a href="#">
+              <img src="../images/todojunto/avatar.png" alt="avatar"/>
+              <span>
+                <strong>john john</strong>
+                <p>
+                  pistolero y asceta a tiempo parcial
+                </p>
+              </span>
+            </a>
+          </li>
+
+          <li>
+            <a href="#">
+              <img src="../images/todojunto/avatar.png" alt="avatar"/>
+              <span>
+                <strong>john john</strong>
+                <p>
+                  pistolero y asceta a tiempo parcial
+                </p>
+              </span>
+            </a>
+          </li>
+
+          <li>
+            <a href="#">
+              <img src="../images/todojunto/avatar.png" alt="avatar"/>
+              <span>
+                <strong>john john</strong>
+                <p>
+                  pistolero y asceta a tiempo parcial
+                </p>
+              </span>
+            </a>
+          </li>
+
+          <li>
+            <a href="#">
+              <img src="../images/todojunto/avatar.png" alt="avatar"/>
+              <span>
+                <strong>john john</strong>
+                <p>
+                  pistolero y asceta a tiempo parcial
+                </p>
+              </span>
+            </a>
+          </li>
+          
+          <li>
+            <a href="#">
+              <img src="../images/todojunto/avatar.png" alt="avatar"/>
+              <span>
+                <strong>john john</strong>
+                <p>
+                  pistolero y asceta a tiempo parcial
+                </p>
+              </span>
+            </a>
+          </li>
+
+          <li>
+            <a href="#">
+              <img src="../images/todojunto/avatar.png" alt="avatar"/>
+              <span>
+                <strong>john john</strong>
+                <p>
+                  pistolero y asceta a tiempo parcial
+                </p>
+              </span>
+            </a>
+          </li>
+
+          <li>
+            <a href="#">
+              <img src="../images/todojunto/avatar.png" alt="avatar"/>
+              <span>
+                <strong>john john</strong>
+                <p>
+                  pistolero y asceta a tiempo parcial
+                </p>
+              </span>
+            </a>
+          </li>
+
+          <li>
+            <a href="#">
+              <img src="../images/todojunto/avatar.png" alt="avatar"/>
+              <span>
+                <strong>john john</strong>
+                <p>
+                  pistolero y asceta a tiempo parcial
+                </p>
+              </span>
+            </a>
+          </li>
+
+          <li>
+            <a href="#">
+              <img src="../images/todojunto/avatar.png" alt="avatar"/>
+              <span>
+                <strong>john john</strong>
+                <p>
+                  pistolero y asceta a tiempo parcial
+                </p>
+              </span>
+            </a>
+          </li>
+          
+        </ul>
+      </div><!-- .col -->
+
+      <div class="col related">
+        <strong class="title">cosicas relacionadas</strong>
+        <ul>
+          <li><a href="#"><span>+</span> Imagínate que hay una noticia relacionada</a></li>
+          <li><a href="#"><span>+</span> Imagínate ahora que hay otra</a></li>
+          <li><a href="#"><span>+</span> Pero seguro que no pueden haber 3!!</a></li>
+        </ul>
+      </div><!-- .col -->
+
+      <div class="col about">
+        <strong class="title">uanmortaim</strong>
+        <img src="../images/todojunto/stamps.jpg" alt="about"/>
+        <p>The nation’s top copyright official made a blistering attack.</p>
+        <p>The nation’s top copyright official made a blistering attack.</p>
+      </div><!-- .col -->
+      
+      <hr/>
     </div><!-- .wrapper -->
   </div><!-- #related -->
   
   <div id="footer">
     <div class="wrapper">
-      <p>
-        Su pie aquí
-      </p>
+      <a href="#" class="logo">Hola mundo</a>
     </div><!-- .wrapper-->
   </div><!-- #footer -->
