@@ -1,4 +1,5 @@
 <% content_for :header do %>
+      
       #roundedboxofdeath {
         background: #2BCCF6;
         padding: 2em;
@@ -12,8 +13,41 @@
       <!--[if IE 6]>
       <style type="text/css">
         #roundedboxofdeath {
-          background: red
+          position: relative;
+          height: 1%;
         }
+        
+        .rc {
+          position: absolute;
+          width: 10px;
+          height: 10px;
+          overflow: hidden;
+        }
+        
+        .nw {
+          top: 0;
+          left: 0;
+          background: url("../images/rc_nw.gif") no-repeat top left;
+        }
+        
+        .ne {
+          top: 0;
+          right: 0;
+          background: url("../images/rc_ne.gif") no-repeat top left;
+        }
+        
+        .sw {
+          bottom: 0;
+          left: 0;
+          background: url("../images/rc_sw.gif") no-repeat top left;
+        }
+        
+        .se {
+          bottom: 0;
+          right: 0;
+          background: url("../images/rc_se.gif") no-repeat top left;
+        }
+        
       </style>
       <![endif]-->
       

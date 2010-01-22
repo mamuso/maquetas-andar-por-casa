@@ -16,6 +16,29 @@
   <p>
     Para todos los navegadores que lo soporten vamos a usar las <a href="http://www.css3.info/preview/rounded-border/">propiedades de CSS3</a> que nos permitan hacer unos bonitos bordes redondeados, y luego está explorer (¿alguien lo dudaba?).
   </p>
+  
+  <p>
+    Para explorer podemos usar como alternativa la pesadísima técnica de recortar todas las esquinitas. De manera que, teniendo este código:
+  </p>
+  
+  <pre><code>
+&lt;div id=&quot;cosaaredondear&quot;&gt;
+  &lt;span class=&quot;rc nw&quot;&gt;&lt;/span&gt;
+  &lt;span class=&quot;rc ne&quot;&gt;&lt;/span&gt;
+  &lt;span class=&quot;rc se&quot;&gt;&lt;/span&gt;
+  &lt;span class=&quot;rc sw&quot;&gt;&lt;/span&gt;
+  contenido!
+&lt;/div&gt;
+  </code></pre>
+  
+  <p>
+    Con <em>cosaaredondear</em> posicionado relativo podemos coger esos 4 spans y posicionarlos de forma absoluta, uno en cada esquina, poniendo el background correspondiente. Se ve mucho mejor en <a href="examples/example012.html">el ejemplo</a>.
+  </p>
+  
+  <p>
+    Mi recomendación es que si tu maqueta tiene un uso abusivo de bordes redondeados lo mejor es que, únicamente en explorer, inyectes esos spans por javascript para mantener más pulcro el documento.
+  </p>
+  
   <p>
     <a href="008-hacks-01.html" class="button">« anterior</a>
     <a href="009-todo-junto.html" class="button">siguiente »</a>
