@@ -5,7 +5,7 @@
 <head>
   <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
   <meta name="viewport" content="width=device-width; initial-scale=1.0; maximum-scale=1.0; user-scalable=0;" />
-  <title>sliding doors - front end</title>
+  <title>sacar partido al hover - front end</title>
   <link rel="stylesheet" href="stylesheets/presentacion.css" type="text/css" media="screen" charset="utf-8"/>
   <link rel="stylesheet" href="stylesheets/presentacion-handheld.css" type="text/css" media="only screen and (max-device-width: 480px)" charset="utf-8"/>
   <!--[if lte IE 6]>
@@ -22,37 +22,21 @@
     <div class="wrapper">
       
 
-<img src="images/0028.png" class="sreenshot" alt="sliding doors"/>
+<img src="images/0028.png" class="sreenshot" alt="sacar partido al hover"/>
 
 <div class="article">
-  <h1>sliding doors</h1>
+  <h1>sacar partido al :hover</h1>
   
   <p>
-    Esta técnica es tan chula como <a href="http://www.alistapart.com/articles/slidingdoors/">milenaria</a>, y sigue siendo tan útil como el primer día. 
+    Hay veces que la técnica está ahí, lo que falta es la imaginación. Este es el caso del <em>:hover</em>. Un ejemplo es el apartado de gente en <a href="http://www.domestika.org/">domestika</a>.
   </p>
   
   <p>
-    Se trata de jugar con dos fondos de manera que actúen como puertas correderas. Uno cubre el fondo y un lado y el otro hace de cierre.
+    En firefox y safari tenemos barra libre para aplicar <em>:hover</em>, pero explorer... aaaaay explorer :) La solución aquí <a href="http://www.xs4all.nl/~peterned/csshover.html">este hack</a> feote pero funcional
   </p>
   
   <p>
-    <img src="images/sliding.png" alt="sliding"/>
-  </p>
-  
-  <p>
-    Lo clasicazo de esta técnica es usarla para hacer pestañas o botones, usualmente con bordes redondeados. El código para hacer unas pestañas podría ser tan sencillote como este:
-  </p>
-  
-  <pre><code>
-&lt;ul id=&quot;nav&quot;&gt;
-  &lt;li class=&quot;active&quot;&gt;&lt;a href=&quot;#&quot;&gt;Sobre wadus&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;#&quot;&gt;El ABC del wadus&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;#&quot;&gt;Ups&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;&lt;!-- #nav --&gt;
-  </code></pre>
-  
-  <p>
-    Al final lo mejor es ver <a href="examples/example010.html">el ejemplo</a> :) 
+    Vamos a replicar el ejempo, una lista de imágenes con datos asociados. El marcado limpito y a mínimos:
   </p>
   
   <p>

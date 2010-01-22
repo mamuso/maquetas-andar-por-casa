@@ -1,0 +1,143 @@
+<% content_for :header do %>
+      body { 
+        behavior: url("../images/csshover3.htc"); 
+      }
+      
+      * {
+        margin: 0;
+        padding: 0;
+      }
+      
+      a {
+        color: #FFFFFF;
+      }
+      
+      #gallery {
+        margin: 2em 0;
+        height: 1%;
+      }
+      
+      #gallery li {
+        float: left;
+        height: 10.4em;
+        width: 10.4em
+        list-style: none;
+        z-index: 0;
+        font-size: x-small;
+        list-style: none
+      }
+      
+      #gallery li img {
+        position: relative;
+        z-index: 0;
+        border: 2px solid #FFFFFF;
+      }
+      
+      #gallery li dl {
+        position: absolute;
+        display: none;
+        background: #333;
+        top: -0.5em;
+        left: -0.7em;
+        width: 12em;
+        height: 10.4em;
+        padding: 0.5em 0.5em 0.5em 12em;
+        color: #FFF;
+        z-index: 1;
+      }
+
+      #gallery li dt {
+        display: block
+        padding: 0.5em 0 0;
+        font-weight: bold;
+        font-size: 1.1em;
+      }
+
+      #gallery li dd {
+        padding: 0 0 0.5em;
+        font-size: 1.1em;
+      }
+
+      #gallery li:hover {
+        position: relative;
+        z-index: 1;
+      }
+      
+      #gallery li:hover img {
+        position: relative;
+        z-index: 2;
+      }
+
+      #gallery li:hover dl {
+        display: block;
+      }
+      
+<% end %>
+
+<ul id="gallery">
+  <li class="active">
+    <img src="../images/hover.jpg">
+    <dl>
+      <dt>Artista:</dt>
+      <dd>tweedlebop</dd>
+      
+      <dt>Url:</dt>
+      <dd><a href="http://tweedlebop.com/archives/650">tweedlebop.com</a></dd>
+    </dl>
+  </li>
+
+  <li>
+    <img src="../images/hover_b.jpg">
+    <dl>
+      <dt>Artista:</dt>
+      <dd>tweedlebop</dd>
+      
+      <dt>Url:</dt>
+      <dd><a href="http://tweedlebop.com/archives/522">tweedlebop.com</a></dd>
+    </dl>
+  </li>
+  
+  <li>
+    <img src="../images/hover.jpg">
+    <dl>
+      <dt>Artista:</dt>
+      <dd>tweedlebop</dd>
+      
+      <dt>Url:</dt>
+      <dd><a href="http://tweedlebop.com/archives/650">tweedlebop.com</a></dd>
+    </dl>
+  </li>
+
+  <li>
+    <img src="../images/hover_b.jpg">
+    <dl>
+      <dt>Artista:</dt>
+      <dd>tweedlebop</dd>
+      
+      <dt>Url:</dt>
+      <dd><a href="http://tweedlebop.com/archives/522">tweedlebop.com</a></dd>
+    </dl>
+  </li>
+  
+  <li>
+    <img src="../images/hover.jpg">
+    <dl>
+      <dt>Artista:</dt>
+      <dd>tweedlebop</dd>
+      
+      <dt>Url:</dt>
+      <dd><a href="http://tweedlebop.com/archives/650">tweedlebop.com</a></dd>
+    </dl>
+  </li>
+
+  <li>
+    <img src="../images/hover_b.jpg">
+    <dl>
+      <dt>Artista:</dt>
+      <dd>tweedlebop</dd>
+      
+      <dt>Url:</dt>
+      <dd><a href="http://tweedlebop.com/archives/522">tweedlebop.com</a></dd>
+    </dl>
+  </li>
+</ul><!-- #gallery -->

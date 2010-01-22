@@ -1,0 +1,7 @@
+# Built-in
+
+# Custom 
+title: sacando partido al :hover
+layout: examples
+custom_path: /examples/example011.html
+filters_pre: erb

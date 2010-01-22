@@ -1,0 +1,7 @@
+# Built-in
+
+# Custom 
+title: slinding doors
+layout: examples
+custom_path: /examples/example010.html
+filters_pre: erb

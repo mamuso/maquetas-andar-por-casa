@@ -1,0 +1,81 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+  <title>slinding doors - front end</title>
+  <style type="text/css">
+    body {
+      font-family: Arial, Helvetica, sans-serif;
+      font-size: x-small;
+      font-variant: normal;
+      font-style: normal;
+      font-weight: normal;
+      line-height: 1.5em;
+      text-align: center;
+      background: #EDECE9;
+      margin: 0;
+      padding: 0;
+    }
+    
+    #column {
+      width: 30em;
+      margin: 0 auto;
+      font-size: 1.3em;
+      text-align: left;
+    }
+    
+    
+    p {
+      padding: 0.5em;
+      margin: 0;
+    }
+    
+    #nav {
+      height: 1%;
+      overflow: hidden;
+      border-bottom: 10px solid #2D5783;
+      padding: 3em 0 0;
+    }
+    
+    #nav li {
+      float: left;
+      margin: 0 0.1em;
+      list-style: none;
+      background: url("../images/sliding_a.gif") no-repeat top left;
+    }
+    
+    #nav li a {
+      display: block;
+      text-decoration: none;
+      font-weight: bold;
+      color: #666;
+      padding: 0.7em 1.3em 0.5em;
+      background: url("../images/sliding_b.gif") no-repeat top right;
+    }
+    
+    #nav li.active {
+      background: #2D5783 url("../images/sliding_a_active.gif") no-repeat top left;
+    }
+    
+    #nav li.active a {
+      color: #FFF;
+      background: url("../images/sliding_b_active.gif") no-repeat top right;
+    }
+    
+
+  </style>
+</head>
+<body>
+  <div id="column">
+    
+
+<ul id="nav">
+  <li class="active"><a href="#">Sobre wadus</a></li>
+  <li><a href="#">El ABC del wadus</a></li>
+  <li><a href="#">Ups</a></li>
+</ul><!-- #nav -->
+  </div><!-- #column -->
+</body>
+</html>
