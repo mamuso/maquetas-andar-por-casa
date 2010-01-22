@@ -1,0 +1,41 @@
+<% content_for :header do %><% end %>
+
+<img src="images/0025.png" class="sreenshot" alt="el clásico formulario de búsqueda"/>
+
+<div class="article">
+  <h1>el clásico formulario de búsqueda</h1>
+  
+  <p>
+    A todos nos suena este tipo de buscadores compactos, tan monos, situados normalmente en sidebars o en cabeceras. Podemos hacerlos sin perder elegancia a la hora de codificarlos.
+  </p>
+  
+  <p>
+    Alrededor de un formulario tienes unas cuantas etiquetas con las que poder jugar. El marcado podría quedar tan limpito como esto:
+  </p>
+  
+  <pre><code>
+&lt;form action=&quot;#&quot; method=&quot;post&quot; id=&quot;search&quot;&gt;
+  &lt;fieldset&gt;
+    &lt;label for=&quot;q&quot;&gt;Buscar&lt;/label&gt;
+    &lt;input type=&quot;text&quot; name=&quot;q&quot; value=&quot;&quot; id=&quot;q&quot;/&gt;
+    &lt;button type=&quot;submit&quot;&gt;Vamos!&lt;/button&gt;
+  &lt;/fieldset&gt;
+&lt;/form&gt;
+  </code></pre>
+  
+  <p>
+    Yo además estoy viviendo mi historia de amor particular con los <a href="http://particletree.com/features/rediscovering-the-button-element/">buttons</a>, tienen muchísimas más posibilidades de formateo y son mucho más estables entre navegadores... excepto por algunos problemillas, nada irresoluble :)
+  </p>
+  
+  <ul>
+    <li>Para los problemas de extra width y extra padding de explorer <a href="http://www.creativespirits.com.au/treasurechest/too-much-padding-on-buttons-in-IE.html">hay solución</a>.</li>
+    <li>Y si firefox se te pone pesadito con paddings raros <a href="http://www.aheadcreative.com/removing-unwanted-button-padding-in-firefox/">se le pone esto</a> y todo arreglado.</li>
+  </ul>
+  
+  
+  <p>
+    <a href="006-mas-alla-del-div.html" class="button">« anterior</a>
+    <a href="006-mas-alla-del-div-02.html" class="button">siguiente »</a>
+  </p>
+
+</div>

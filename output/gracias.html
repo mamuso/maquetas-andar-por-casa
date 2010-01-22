@@ -13,42 +13,66 @@
   <![endif]-->
   
     p {
-      padding: 0.5em 0;
+      padding: 0.5em;
       margin: 0;
     }
     
-    #wrapper {
-      width: 95.1em;
-      margin: 2em auto;
-      text-align: left;
+    #wadus_usage {
+      width: 20em;
+      margin: 4em auto;
     }
     
-    #header,
-    #footer {
-      display: block;
-      clear: both;
-      font-size: 1.2em;
-      background: #FFFFFF;
-      padding: 1em;
+    #wadus_usage dd {
+      color: #FFF;
+      padding: 0.5em;
       margin: 0 0 0.5em 0;
+      background: #e50278;
+      border-right: 1px solid #841941;
+      border-bottom: 1px solid #841941;
+      text-align: right;
     }
     
-    #article {
-      font-size: 1.2em;
-      background: #FFFFFF;
-      padding: 1em;
+    #wadus_usage dd strong {
+      position: absolute;
+      right: 1.5em;
+      color: #999;
+    }
+    
+    #wadus_usage dd.mucho {
+      width: 50%;
+    }
+    
+    #wadus_usage dd.poco {
+      width: 20%;
+    }
+    
+    #wadus_usage dd.nada {
+      width: 30%;
+    }
+    
+    #car_card dt {
       float: left;
-      margin: 0 0 0.5em 0;
-      width: 60em;
+      width: 11em;
+      text-align: right;
+      font-weight: bold;
     }
     
-    #aside {
-      font-size: 1.2em;
+    #car_card dd {
+      display: block;
+      margin: 0 0 0.5em 11.5em;
+    }
+    
+    
+    #wadus_usage {
+      position: relative;
       background: #FFFFFF;
-      padding: 1em;
-      float: right;
-      margin: 0 0 0.5em 0;
-      width: 14.7em;
+      padding: 1.5em;
+    }
+    
+    #wadus_usage dt {
+      font-size: 1.3em;
+      padding: 0 0 0.5em 0;
+      color: #666;
     }
     
 
@@ -60,7 +84,8 @@
   </div><!-- #header -->
   <div id="content">
     <div class="wrapper">
-      Hi, I'm a new page!
+      <% content_for :header do %><% end %>
+Hi, I'm a new page!
 
 
 

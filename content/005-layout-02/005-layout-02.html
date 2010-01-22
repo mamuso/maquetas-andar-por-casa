@@ -1,0 +1,40 @@
+<% content_for :header do %><% end %>
+
+  <img src="images/0023.png" class="sreenshot" alt="el típico layout centrado con franjas de parte a parte"/>
+
+<div class="article">
+  <h1>el típico layout centrado con franjas de parte a parte</h1>
+  
+  <p>
+    Si te paras a pensar es como el anterior pero dando la vuelta al concepto, ahora dentro de cada franja vamos a tener un contenedor 'director' que va a marcar la altura. 
+  </p>
+  
+  <p>
+    De esta manera puedes rellenar cada franja para que ocupe de de parte a parte de pantalla y dejar el contenido localizado en el centro:
+  </p>
+  
+  <pre><code>
+&lt;div id=&quot;header&quot;&gt;
+  &lt;div class=&quot;wrapper&quot;&gt;
+    Su cabecera aqu&iacute;
+  &lt;/div&gt;&lt;!-- .wrapper --&gt;
+&lt;/div&gt;&lt;!-- #header --&gt;
+
+&lt;div id=&quot;content&quot;&gt;
+  &lt;div class=&quot;wrapper&quot;&gt;
+    Su contenido aqu&iacute;
+  &lt;/div&gt;&lt;!-- .wrapper --&gt;
+&lt;/div&gt;&lt;!-- #content --&gt;
+
+...
+  </code></pre>
+  <p>
+    Lo mejor es echarle echarle un vistacillo <a href="examples/example007.html">al ejemplo</a> y escudriñarlo con firebug.
+  </p>
+  
+  <p>
+    <a href="005-layout-01.html" class="button">« anterior</a>
+    <a href="006-mas-alla-del-div.html" class="button">siguiente »</a>
+  </p>
+
+</div>

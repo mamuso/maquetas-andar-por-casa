@@ -1,0 +1,7 @@
+# Built-in
+
+# Custom 
+title: layout centrado
+layout: layouts
+custom_path: /examples/example007.html
+filters_pre: erb

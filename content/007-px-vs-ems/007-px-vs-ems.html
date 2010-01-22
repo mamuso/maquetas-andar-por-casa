@@ -1,0 +1,54 @@
+<% content_for :header do %><% end %>
+
+<img src="images/0027.jpg" class="sreenshot" alt="px vs ems"/>
+
+<div class="article">
+  <h1>px vs ems</h1>
+  
+  <p>
+    Cuestión de gustos práctica y objetivos (en mi opinión). Los pixels son unidades absolutas, frente a los <a href="http://en.wikipedia.org/wiki/Em_%28typography%29">ems</a> que son relativas. Por resumir:
+  </p>
+  
+  <ul>
+    <li>Trabajar en pixels no tiene problemas al anidar medidas en función del font-size y podemos ser muy precisos frente al diseño.</li>
+    <li>Trabajar en ems es complicado, pero no tanto. La principal ventaja es que al hacer zoom el layout crecerá al tiempo que crezca la tipografía.</li> 
+  </ul>
+  
+  <p>
+    Firefox3 y explorer8 han incorporado ya un zoom decente, de manera que no importa la medida en la que maquetemos, el layout crecerá siempre con la tipografía. A raíz de esto ha surgido la discursión sobre si merece la pena el esfuerzo de trabajar en unidades relativas, pero oye... seguimos maquetando para ie6! :)
+  </p>
+  
+  <p>
+    En cualquier caso hay una manera de facilitarte la vida si quieres maquetar en ems. Observeusté:
+  </p>
+  
+  <pre><code>
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: x-small;
+  font-variant: normal;
+  font-style: normal;
+  font-weight: normal;
+  line-height: 1.5em;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+  </code></pre>
+  
+  <p>
+    Con esta base puedes trabajar de manera que <strong>10px = 1em</strong>, así definir los contenedores principales es bastante fácil. Esta docu y los ejemplos que hay en ella usan esta base.
+  </p>
+  
+  <p>
+    Yo me siento cómodo trabajando en ambas unidades, pero me encanta la sensación de hacer zoom en ie6 y ver como todo crece.
+  </p>
+  
+  <p>
+    <a href="006-mas-alla-del-div-02.html" class="button">« anterior</a>
+    <a href="008-hacks.html" class="button">siguiente »</a>
+  </p>
+
+</div>

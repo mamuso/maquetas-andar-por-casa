@@ -1,0 +1,7 @@
+# Built-in
+
+# Custom 
+title: el clásico formulario de búsqueda
+layout: examples
+custom_path: /examples/example008.html
+filters_pre: erb
