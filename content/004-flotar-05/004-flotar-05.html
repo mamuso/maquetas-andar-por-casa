@@ -11,7 +11,7 @@
   </p>
   
   <p>
-    Adicionalmente para que funcione en explorer (oh, explorer!) necesitaremos aplicar el concepto <a href="http://msdn.microsoft.com/en-us/library/bb250481%28VS.85%29.aspx">has layout</a>. Haciendo un resumen patatero diremos que para explorer un elemento <em>hasLayout</em> si (entre otras posibilidades) tiene <em>width</em> o <em>height</em>. Si el contenedor tiene ya <em>width</em> pues todo arreglado, si no podemos usar <em>height: 1%</em> en la <a href="http://www.quirksmode.org/css/condcom.html">hoja de estilo para explorer</a>.
+    Adicionalmente para que funcione en explorer (oh, explorer!) necesitaremos aplicar el concepto <a href="http://msdn.microsoft.com/en-us/library/bb250481%28VS.85%29.aspx">has layout</a> (mejor explicado <a href="http://www.satzansatz.de/cssd/onhavinglayout.html">por aquí</a>). Haciendo un resumen patatero diremos que para explorer un elemento <em>hasLayout</em> si (entre otras posibilidades) tiene <em>width</em> o <em>height</em>. Si el contenedor tiene ya <em>width</em> pues todo arreglado, si no podemos usar <em>height: 1%</em> en la <a href="http://www.quirksmode.org/css/condcom.html">hoja de estilo para explorer</a>.
   </p>
   
   <pre><code>
@@ -22,7 +22,18 @@
   ...
 }
   </code></pre>
-    
+  
+  <p><a href="http://borjadelgado.com/">Borja Delgado</a> me comenta <a href="http://mamuso.net/post/2010/01/24/frontend-andar-casa#c4805991">por aquí</a>, no sin razón, que esto puede dar algún problemilla, de manera que si queremos no definir heights tenemos esta opción:</p>
+  
+  <pre><code>
+.editorial {
+  ...
+  zoom: 1;
+  display: inline-block;
+  ...
+}
+  </code></pre>
+  
   <p>Explicado de otra manera <a href="http://www.quirksmode.org/css/clearing.html">por aquí</a>, y el ejemplo correspondiente <a href="examples/example005.html">por aquí</a>.</p>
   
   <p>
